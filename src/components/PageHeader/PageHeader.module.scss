@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100% !important;
+}
+
+.title {
+  white-space: nowrap;
+  color: #fff !important;
+  text-align: center;
+  margin: 0 !important;
+  &:after {
+    content: "Hacker News";
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 25px !important;
+  }
+}

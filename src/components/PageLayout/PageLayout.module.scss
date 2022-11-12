@@ -1,0 +1,23 @@
+.layout {
+  min-height: 100vh !important;
+  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  margin: auto;
+}
+
+.content {
+  height: 100%;
+  padding: 30px 50px;
+}
+
+.noScroll {
+  height: calc(100vh - 64px);
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 10px 25px;
+  }
+}
