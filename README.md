@@ -4,8 +4,9 @@ Server is deployed on https://my-news-server.herokuapp.com
 
 ---
 Link to the live project: https://master--venerable-clafoutis-05724e.netlify.app/
----
 
+---
+## Start locally
 ### `yarn install`
 install dependencies
 
