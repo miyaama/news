@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback } from "react";
-import { PageHeader, Card, Button } from "antd";
+import { PageHeader, Card, Button, Divider } from "antd";
 import { RedoOutlined } from "@ant-design/icons";
 import { useParams, useHistory } from "react-router-dom";
 import moment from "moment";
@@ -83,6 +83,7 @@ const NewsPage: React.FC = () => {
             Update comments
           </Button>
         </div>
+        <Divider />
         {comments.map((comment) => (
           <CommentItem comment={comment} key={comment.id} />
         ))}
