@@ -7,6 +7,8 @@ Link to the live project: https://master--venerable-clafoutis-05724e.netlify.app
 
 ---
 ## Start locally
+Node.js v16.17.0
+
 ### `yarn install`
 install dependencies
 
