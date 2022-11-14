@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Typography, Layout } from "antd";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ const { Title } = Typography;
 
 const { Header } = Layout;
 
-const PageHeader = () => {
+const PageHeader: React.FC = () => {
   return (
     <Header className={styles.header}>
       <Link to="/">

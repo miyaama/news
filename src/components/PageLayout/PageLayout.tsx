@@ -1,17 +1,14 @@
-import React from 'react';
-import clsx from "clsx";
-
+import React from "react";
 import Layout from "antd/lib/layout/layout";
+
 import PageHeader from "../PageHeader";
 import styles from "./PageLayout.module.scss";
 
-const PageLayout = ({ children, noScroll }) => {
+const PageLayout: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   return (
     <Layout className={styles.layout}>
       <PageHeader />
-      <div className={clsx(styles.content, noScroll && styles.noScroll)}>
-        {children}
-      </div>
+      <div className={styles.content}>{children}</div>
     </Layout>
   );
 };

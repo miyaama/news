@@ -1,7 +1,8 @@
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
 
+import { useAppDispatch as useDispatch } from "./hooks";
 import HomePage from "./pages/HomePage/HomePage";
 import NewsPage from "./pages/NewsPage";
 import { fetchNews } from "./store/slices";
@@ -12,12 +13,12 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchNews());
-    setInterval(() => {
+    const intervalId = setInterval(() => {
       dispatch(fetchNews());
     }, 60000);
 
     return () => {
-      clearInterval();
+      clearInterval(intervalId);
     };
   }, [dispatch]);
 

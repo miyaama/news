@@ -1,8 +1,15 @@
+import React from "react";
 import { Card, Col, Rate } from "antd";
 import moment from "moment";
 import { Link } from "react-router-dom";
 
-const NewsCard = ({ newsItem }) => {
+import { NewsItem } from "../../../shared/types";
+
+interface Props {
+  newsItem: NewsItem;
+}
+
+const NewsCard: React.FC<Props> = ({ newsItem }) => {
   return (
     <Col
       key={newsItem.id}
